@@ -12,7 +12,7 @@ Aqui o Quiz está sendo utilizado em conjunto com a API TalkingWithGemini para c
 ## 🎨 Funcionalidade
 - **Personalização de Perguntas:** As perguntas podem ser feitas de acordo com a disciplina escolhida pelo usuário e pelo nível de dificuldade desejada.
 - **Menor chance de Copia-e-Cola:** Como as perguntas são geradas a cada vez que o usuário inicia o quiz, a chance das mesmas se repetirem na mesma ordem é baixa.
-- **Contagem de pontuação:** É possível gerar uma análise do desempenho do usuário de acordo com o desempenho do mesmo durante o Quiz.
+- **Contagem de pontuação:** É possível gerar uma análise do usuário de acordo com o desempenho do mesmo durante o Quiz.
 
 ## 🚀 Tecnologias Utilizadas
 - **HTML:** Para a criação da estrutura do site.
