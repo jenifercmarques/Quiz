@@ -5,7 +5,7 @@ Onde o usuário pode tanto criar suas perguntas já prontas, ou utilizar em conj
 ## Demonstração
 Aqui o Quiz está sendo utilizado em conjunto com a API TalkingWithGemini para criar perguntas de nível Básico da discilplica Matemática.
 <p align = center> 
-  <img width="460" height="300" src="(/video.gif)">
+  <img width="460" height="300" src="(video.gif)">
 </p>
 
 
