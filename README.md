@@ -4,7 +4,7 @@ Onde o usuário pode tanto criar suas perguntas já prontas, ou utilizar em conj
 
 ## Demonstração
 Aqui o Quiz está sendo utilizado em conjunto com a API TalkingWithGemini para criar perguntas de nível Básico da discilplica Matemática.
-(https://github.com/jenifercmarques/Quiz/blob/main/video.gif)
+(./Quiz/blob/main/video.gif)
 
 ## 🎨 Funcionalidade
 - **Personalização de Perguntas:** As perguntas podem ser feitas de acordo com a disciplina escolhida pelo usuário e pelo nível de dificuldade desejada.
