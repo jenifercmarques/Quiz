@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #241E4E;
+}
+
+/* ~-~-~-~-~-~-~-~- estrutura loading ~-~-~-~-~-~-~-~-*/
+
+.loading{
+  display: none;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #241E4E;
+}
+
+.animation {
+  height: 50px;
+  display: flex;
+  transform: rotate(180deg);
+  
+}
+
+.animation span {
+  width: 38px;
+  margin: 0 2px;
+  border-radius: 6px;
+  /* background-color: #fff; */
+  animation: loader 2s infinite;
+}
+/* CORES #3da5d9 #D0FEF5 #EFCA08 #5448C8 #241E4E */
+@keyframes loader {
+
+  0%,
+  100% {
+      height: 15px;
+      background-color: #3da5d9;
+  }
+
+  25% {
+      height: 95px;
+      background-color: #5448C8;
+  }
+
+  50% {
+      height: 50px;
+      background-color: #EFCA08;
+  }
+
+  75% {
+      height: 95px;
+      background-color: #D0FEF5;
+  }
+}
+
+.animation span:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.animation span:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.animation span:nth-child(3) {
+  animation-delay: .6s;
+}
+
+.animation span:nth-child(4) {
+  animation-delay: .8s;
+}
+
+.animation span:nth-child(5) {
+  animation-delay: .10s;
+}
+
+
+/* -~-~-~-~-~-começa estrutura info e Start-~-~-~-~-~- */
+.start_btn,
+.info_box,
+.quiz_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 19);
+  transition: all 0.3s ease;
+}
+
+.info_box.activeInfo {
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz_box.activeQuiz {
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.start_btn button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #241E4E;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+/* -~-~-~-~-~-Termina Start-~-~-~-~-~- */
+/* -~-~-~-~-~-Começa a Info-~-~-~-~-~- */
+.info_box {
+  height: 500px;
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.info_box .info-title {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info_box .info-list {
+  padding: 15px 35px;
+}
+
+.info_box .info-list .info {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.info_box .buttons-info {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons-info button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  outline: none; /*após a aplicação do JS se formou uma linha em volta do botão, comando para remover a mesma*/
+  border: 1px solid #5448C8;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* -~-~-~-~-~-termina a box info-~-~-~-~-~- */
+/* -~-~-~-~-~-botão desistir-~-~-~-~-~- */
+.buttons-info button.quit {
+  color: #5448C8;
+}
+.buttons-info button.quit:hover {
+  color: #fff;
+  background: #5448C8;
+}
+/* -~-~-~-~-~-botão continuar -~-~-~-~-~-*/
+.buttons-info button.restart {
+  color: #fff;
+  background: #5448C8;
+}
+
+.buttons-info button.restart:hover {
+  background: #5448C8;
+}
+
+/* -~-~-~-~-~-Box Quiz-~-~-~-~-~- */
+
+.quiz_box {
+  background: #fff;
+  width: 550px;
+  border-radius: 10px;
+  padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.quiz_box h1 {
+  font-size: 25px;
+  color: #5448C8;
+  font-weight: 600; /*diminui a espessura da letra*/
+  border-bottom: 1px solid #333; /*cria a "linha"*/
+  padding-bottom: 30px;
+  text-align: center;
+}
+/* -~-~-~-~-~-Termina ESTILIZAÇÃO Box Quiz-~-~-~-~-~- */
+/* -~-~-~-~-~-Perguntas-~-~-~-~-~- */
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #5448C8;
+  font-weight: 600;
+}
+
+#aproved {
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover:not([disabled]) {
+  background: #5448C8;
+  color: #fff; /*cor da fonte*/
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: #5448C8;
+  color: #fff;
+  font-weight: 500;
+  border: 0;
+  padding: 10px; /*aumentou a proporção do botão*/
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: #9aea9e;
+}
+
+.incorrect {
+  background: #ff9393;
+}
+/* -~-~-~-~-~-Termina Perguntas-~-~-~-~-~- */
+/* -~-~-~-~-~-Inicia RODAPÉ Box Quiz-~-~-~-~-~- */
+
+.quiz_box footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz_box footer .total-questions span {
+  display: flex;
+  user-select: none;
+}
+.quiz_box footer .total-questions span p {
+  font-weight: 600;
+  padding: 0 5px;
+}

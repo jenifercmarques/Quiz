@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de Matemática</title>
+</head>
+<body>
+    
+  <div class="loading">
+    <div class="animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+
+    <div class="start_btn"><button>Comece o Jogo!</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Algumas regras desse Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Uma vez  que você seleciona a sua resposta, não poderá alterar.</div>
+            <div class="info">2. Se você sair do Quiz após o Start sem o finalizar, perderá todo o progresso.</div>
+            <div class="info">3. Você irá desbloquear o próximo jogo somente se acertar 7 das 10 perguntas.</div>
+        </div>
+        <div class="buttons-info">
+            <button class="quit">Sair do Quiz</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <h1>Que comecem os jogos!</h1>
+        <div class="quiz">
+            <h2 id="question">As questões vão ficar aqui</h2>
+            <h2 id="aproved"></h2>
+            <div id="answer-buttons">
+                <button class="btn">Resposta 1</button>
+                <button class="btn">Resposta 2</button>
+                <button class="btn">Resposta 3</button>
+                <button class="btn">Resposta 4</button>
+            </div>
+            <button id="next-btn">Próxima</button>
+        </div>
+        <footer>
+            <div class="total-questions">
+                <span id="currentQuestionIndex"></span>
+            </div>
+        </footer>
+    </div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
