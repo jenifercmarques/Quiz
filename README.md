@@ -20,7 +20,7 @@ Aqui o Quiz está sendo utilizado em conjunto com a API TalkingWithGemini para c
 - **JavaScript:** Para a criação de animação e interatividade com o usuário.
 
 ## 💻 Como Usar
-*observação: o arquivo no repositório está pré-estruturado para o uso com API, caso prefira usar perguntas já prontas se atentar a alteração na `const = prompt` no arquivo .js*
+*observação: o arquivo no repositório está pré-estruturado para o uso com API, caso prefira usar perguntas já prontas se atentar a alteração na `const prompt` no arquivo .js*
 1. Clone o repositório: `git clone https://github.com/jenifercmarques/Quiz.git`
 2. Navegue até o diretório do projeto: `cd Quiz`
 3. Abra o arquivo `index.html` no seu navegador para ver o cartão de produto em ação.
