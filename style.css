@@ -96,6 +96,7 @@ body {
 }
 
 .info_box.activeInfo {
+  height: auto;
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -156,6 +157,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   padding: 0 30px;
   border-top: 1px solid lightgrey;
 }

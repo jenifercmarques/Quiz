@@ -36,14 +36,13 @@ Quero apenas a resposta em formato JSON, sem nenhum outro texto, na estrutura ab
 //Possibilidade START QUIZ
 start_btn.onclick = () => {
   start_btn.style.display = "none";
-  info_box.style.display = "flex";
   info_box.classList.add("activeInfo"); //exibe a tela INFO
 };
 
 //Possibilidade QUIT QUIZ
 quit_btn.onclick = () => {
   info_box.classList.remove("activeInfo"); //oculta a tela INFO
-  
+  start_btn.style.display = "block";
 };
 
 //Possibilidade CONTINUE QUIZ
@@ -170,7 +169,9 @@ nextButton.addEventListener("click", () => {
     // startQuiz();
     aproved.innerHTML = ``;
     quiz_box.classList.remove("activeQuiz");
-    start_btn.click();
+    info_box.classList.add("activeInfo");
+    info_box.style.display = "block";
+    
   }
 });
 
