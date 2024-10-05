@@ -18,7 +18,7 @@ let Level = "Básico";
 let Discipline = "Matemática";
 
 const prompt = `Gere 10 perguntas e 4 alternativas, sendo uma delas verdadeira e as demais falsas de nível ${Level} da disciplina de ${Discipline}.
-Quero apenas a resposta em formato JSON, sem nenhum outro texto, na estrutura abaixo:
+Mantendo o seguinte formato JSON, sem adicionar nenhum outro texto, explicação ou comentário na resposta.
 {
 "questions": [
 {
